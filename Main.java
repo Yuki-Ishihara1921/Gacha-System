@@ -24,7 +24,7 @@ public class Main {
 					c -= 1;
 					Random r = new Random();
 					int num = r.nextInt(pokemons.length);
-					System.out.println(num);
+					System.out.println(pokemons[num]);
     				array.add(pokemons[num]);
     		        if (c <= 0) {
     		            System.out.println("コインが足りません。");
