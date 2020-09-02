@@ -6,7 +6,7 @@ public class Main {
 	public static void main (String[] args) {
 		
 		ArrayList<String> array = new ArrayList<String>();
-		String[] pokemons = {"シャワーズ", "サンダース", "ブースター", "エーフィー", "ブラッキー", "リーフィア", "グレイシア", "ニンフィア"}; 
+		String[] dogs = {"ゴールデン・レトリバー", "ヨークシャー・テリア", "ミニチュア・シュナウザー", "ポメラニアン", "ミニチュア・ダックスフンド", "柴犬", "チワワ", "トイ・プードル"}; 
 		System.out.println("Hello, world!");
 		int c = 30;
 		System.out.println("所持コイン_" + c + "_枚");
@@ -23,9 +23,9 @@ public class Main {
     			if (g == 1) {
 					c -= 1;
 					Random r = new Random();
-					int num = r.nextInt(pokemons.length);
-					System.out.println(pokemons[num]);
-    				array.add(pokemons[num]);
+					int num = r.nextInt(dogs.length);
+					System.out.println(dogs[num]);
+    				array.add(dogs[num]);
     		        if (c <= 0) {
     		            System.out.println("コインが足りません。");
     		        }
@@ -35,29 +35,29 @@ public class Main {
 						Random r = new Random();
 						int num10 = r.nextInt(26);
 						if (num10 >= 0 && num10 <5) {
-							System.out.println(pokemons[0]);
-							array.add(pokemons[0]);
+							System.out.println(dogs[0]);
+							array.add(dogs[0]);
 						} else if (num10 >= 5 && num10 < 10) {
-							System.out.println(pokemons[1]);
-							array.add(pokemons[1]);
+							System.out.println(dogs[1]);
+							array.add(dogs[1]);
 						} else if (num10 >= 10 && num10 < 15) {
-							System.out.println(pokemons[2]);
-							array.add(pokemons[2]);
+							System.out.println(dogs[2]);
+							array.add(dogs[2]);
 						} else if (num10 >= 15 && num10 < 18) {
-							System.out.println(pokemons[3]);
-							array.add(pokemons[3]);
+							System.out.println(dogs[3]);
+							array.add(dogs[3]);
 						} else if (num10 >= 18 && num10 < 21) {
-							System.out.println(pokemons[4]);
-							array.add(pokemons[4]);
+							System.out.println(dogs[4]);
+							array.add(dogs[4]);
 						} else if (num10 >= 21 && num10 < 23) {
-							System.out.println(pokemons[5]);
-							array.add(pokemons[5]);
+							System.out.println(dogs[5]);
+							array.add(dogs[5]);
 						} else if (num10 >= 23 && num10 < 25) {
-							System.out.println(pokemons[6]);
-							array.add(pokemons[6]);
+							System.out.println(dogs[6]);
+							array.add(dogs[6]);
 						} else if (num10 == 25) {
-							System.out.println(pokemons[7]);
-							array.add(pokemons[7]);
+							System.out.println(dogs[7]);
+							array.add(dogs[7]);
 						}
     					
     				}
